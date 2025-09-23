@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - layer1
   - $$mdi:backspace-reverse-outline$$
