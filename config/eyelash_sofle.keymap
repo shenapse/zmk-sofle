@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp F11     &kp F1         &kp F2            &kp F3                &kp F4                 &kp F5              &mmv MOVE_UP     &kp F6                &kp F7        &kp F8      &kp F9       &kp F10           &kp F12
-&trans      &trans         &trans            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp SLASH             &kp ASTERISK  &kp CARET   &kp GRAVE    &kp MINUS         &kp EQUAL
-&trans      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON       &mmv MOVE_LEFT   &kp PERCENT           &kp EQUAL     &kp PLUS    &kp MINUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &kp EXCL       &kp QUESTION      &kp AMPERSAND         &kp BACKSLASH          &kp LEFT_SHIFT      &mmv MOVE_RIGHT  &mt RIGHT_SHIFT HASH  &kp AT        &kp DOLLAR  &kp INT_YEN  &kp F12           &trans
-&kp C_MUTE  &trans         &trans            &trans                &trans                 &trans              &mkp LCLK        &trans                &trans        &trans      &trans       &trans
+&kp F11     &kp F1         &kp F2            &kp F3                &kp F4                 &kp F5              &mmv MOVE_UP     &kp F6       &kp F7           &kp F8      &kp F9       &kp F10           &kp F12
+&trans      &trans         &trans            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp SLASH    &kp ASTERISK     &kp CARET   &kp GRAVE    &kp MINUS         &kp EQUAL
+&trans      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON       &mmv MOVE_LEFT   &kp PERCENT  &kp EQUAL        &kp PLUS    &kp MINUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &kp EXCL       &kp QUESTION      &kp AMPERSAND         &kp BACKSLASH          &kp LEFT_SHIFT      &mmv MOVE_RIGHT  &kp HASH     &kp AT           &kp DOLLAR  &kp INT_YEN  &kp F12           &trans
+&kp C_MUTE  &trans         &trans            &trans                &trans                 &trans              &mkp LCLK        &trans       &kp RIGHT_SHIFT  &trans      &trans       &trans
             >;
 
             display-name = "layer1";
