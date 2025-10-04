@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -43,11 +42,11 @@
 
         layer0 {
             bindings = <
-&kp ESC           &kp N1     &kp N2        &kp N3     &kp N4     &kp N5    &kp UP_ARROW     &kp N6   &kp N7       &kp N8         &kp N9         &kp N0             &kp DELETE
-&kp TAB           &kp Q      &kp W         &kp E      &kp R      &kp T     &kp DOWN_ARROW   &kp Y    &kp U        &kp I          &kp O          &kp P              &kp BSLH
-&kp LEFT_CONTROL  &kp A      &kp S         &kp D      &kp F      &kp G     &kp LEFT_ARROW   &kp H    &mt LCTRL J  &kp K          &kp L          &kp SEMI           &kp APOS
-&kp LSHFT         &kp Z      &kp X         &kp C      &kp V      &kp B     &kp RIGHT_ARROW  &kp N    &kp M        &kp COMMA      &kp DOT        &kp FSLH           &mo 2
-&kp C_MUTE        &kp SPACE  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &mo 1     &kp DELETE       &kp TAB  &kp ENTER    &kp BACKSPACE  &kp RIGHT_GUI  &kp RIGHT_CONTROL
+&kp ESC           &kp N1     &kp N2          &kp N3        &kp N4       &kp N5    &kp UP_ARROW     &kp N6  &kp N7       &kp N8                 &kp N9                &kp N0             &kp DELETE
+&kp TAB           &kp Q      &kp W           &kp E         &kp R        &kp T     &kp DOWN_ARROW   &kp Y   &kp U        &kp I                  &kp O                 &kp P              &kp BSLH
+&kp LEFT_CONTROL  &kp A      &kp S           &kp D         &kp F        &kp G     &kp LEFT_ARROW   &kp H   &kp J        &kp K                  &kp L                 &kp COMMA          &kp GRAVE
+&kp LSHFT         &lt 3 Z    &mt LEFT_ALT X  &mt LSHIFT C  &mt LCTRL V  &kp B     &kp RIGHT_ARROW  &kp N   &mt RCTRL M  &mt RIGHT_SHIFT COMMA  &mt RIGHT_ALT PERIOD  &lt 3 PERIOD       &trans
+&kp C_MUTE        &kp SPACE  &kp DEL         &kp TAB       &kp SPACE    &mo 1     &kp DELETE       &trans  &kp ENTER    &kp BACKSPACE          &kp RIGHT_GUI         &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -57,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp F11     &kp F1         &kp F2            &kp F3                &kp F4                 &kp F5              &mmv MOVE_UP     &kp F6                &kp F7        &kp F8      &kp F9       &kp F10           &kp F12
+&trans      &trans         &trans            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp SLASH             &kp ASTERISK  &kp CARET   &kp GRAVE    &kp MINUS         &kp EQUAL
+&trans      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON       &mmv MOVE_LEFT   &kp PERCENT           &kp EQUAL     &kp PLUS    &kp MINUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &kp EXCL       &kp QUESTION      &kp AMPERSAND         &kp BACKSLASH          &kp LEFT_SHIFT      &mmv MOVE_RIGHT  &mt RIGHT_SHIFT HASH  &kp AT        &kp DOLLAR  &kp INT_YEN  &kp F12           &trans
+&kp C_MUTE  &trans         &trans            &trans                &trans                 &trans              &mkp LCLK        &trans                &trans        &trans      &trans       &trans
             >;
 
             display-name = "layer1";
@@ -82,11 +81,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans          &trans           &trans        &trans           &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans    &trans  &trans  &trans          &trans           &trans        &trans           &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans          &trans           &trans        &trans           &trans
+&trans  &trans  &trans          &kp LEFT_SHIFT  &kp RCTRL        &trans    &trans  &trans  &kp RCTRL       &kp RIGHT_SHIFT  &trans        &trans
             >;
         };
     };
