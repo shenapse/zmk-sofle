@@ -112,7 +112,7 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '#', h: '$$mdi:apple-keyboard-shift$$'}
+  - '#'
   - '@'
   - $
   - INT YEN
@@ -126,7 +126,7 @@ layers:
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
