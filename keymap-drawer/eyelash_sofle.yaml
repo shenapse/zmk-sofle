@@ -41,7 +41,7 @@ layers:
   - {t: ',', s: <}
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: Z, h: '3'}
+  - {t: Z, h: '&lt 3'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: V, h: '$$mdi:apple-keyboard-control$$'}
@@ -51,7 +51,7 @@ layers:
   - {t: M, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ',', h: '$$mdi:apple-keyboard-shift$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ., h: '3'}
+  - {t: ., h: '&lt 3'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - $$mdi:keyboard-space$$
@@ -236,7 +236,6 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -246,7 +245,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
