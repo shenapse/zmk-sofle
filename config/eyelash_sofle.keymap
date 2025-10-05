@@ -40,10 +40,22 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <70>;
         flavor = "tap-preferred";
         hold-trigger-key-positions = <43 42 41 47 49 48>;
         retro-tap;
+    };
+
+    LT_Tap_Preferred: on_LT {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LT_Tap_Preferred";
+        bindings = <&lt>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <70>;
+        retro-tap;
+        flavor = "tap-preferred";
+        hold-trigger-key-positions = <40 50 37 38 51 26 39 57 59 27>;
     };
 
     behaviors {
@@ -54,11 +66,11 @@
 
         layer0 {
             bindings = <
-&kp ESC           &kp N1     &kp N2          &kp N3        &kp N4       &kp N5    &kp UP_ARROW     &kp N6  &kp N7                &kp N8                          &kp N9                         &kp N0             &kp DELETE
-&kp TAB           &kp Q      &kp W           &kp E         &kp R        &kp T     &kp DOWN_ARROW   &kp Y   &kp U                 &kp I                           &kp O                          &kp P              &kp BSLH
-&kp LEFT_CONTROL  &kp A      &kp S           &kp D         &kp F        &kp G     &kp LEFT_ARROW   &kp H   &kp J                 &kp K                           &kp L                          &kp COMMA          &kp GRAVE
-&kp LSHFT         &lt 3 Z    &mt LEFT_ALT X  &mt LSHIFT C  &mt LCTRL V  &kp B     &kp RIGHT_ARROW  &kp N   &MT_modifier RCTRL M  &MT_modifier RIGHT_SHIFT COMMA  &MT_modifier RIGHT_ALT PERIOD  &lt 3 PERIOD       &trans
-&kp C_MUTE        &kp SPACE  &kp DEL         &kp TAB       &kp SPACE    &mo 1     &kp DELETE       &trans  &kp ENTER             &kp BACKSPACE                   &kp RIGHT_GUI                  &kp RIGHT_CONTROL
+&kp ESC           &kp N1                 &kp N2                   &kp N3                 &kp N4                &kp N5    &kp UP_ARROW     &kp N6  &kp N7                &kp N8                          &kp N9                         &kp N0                      &kp DELETE
+&kp TAB           &kp Q                  &kp W                    &kp E                  &kp R                 &kp T     &kp DOWN_ARROW   &kp Y   &kp U                 &kp I                           &kp O                          &kp P                       &kp BSLH
+&kp LEFT_CONTROL  &kp A                  &kp S                    &kp D                  &kp F                 &kp G     &kp LEFT_ARROW   &kp H   &kp J                 &kp K                           &kp L                          &kp COMMA                   &kp GRAVE
+&kp LSHFT         &LT_Tap_Preferred 3 Z  &MT_modifier LEFT_ALT X  &MT_modifier LSHIFT C  &MT_modifier LCTRL V  &kp B     &kp RIGHT_ARROW  &kp N   &MT_modifier RCTRL M  &MT_modifier RIGHT_SHIFT COMMA  &MT_modifier RIGHT_ALT PERIOD  &LT_Tap_Preferred 3 PERIOD  &trans
+&kp C_MUTE        &kp SPACE              &kp DEL                  &kp TAB                &kp SPACE             &mo 1     &kp DELETE       &trans  &kp ENTER             &kp BACKSPACE                   &kp RIGHT_GUI                  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
