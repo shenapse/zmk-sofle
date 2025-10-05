@@ -103,11 +103,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans          &trans           &trans        &trans           &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans    &trans  &trans  &trans          &trans           &trans        &trans           &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans          &trans           &trans        &trans           &trans
-&trans  &trans  &trans          &kp LEFT_SHIFT  &kp RCTRL        &trans    &trans  &trans  &kp RCTRL       &kp RIGHT_SHIFT  &trans        &trans
+&trans  &trans   &trans          &trans          &trans           &trans      &trans  &trans    &trans          &trans           &trans           &trans   &trans
+&trans  &trans   &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &trans      &trans  &trans    &kp PAGE_UP     &kp UP_ARROW     &kp PAGE_DOWN    &trans   &trans
+&trans  &kp END  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME    &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp END  &trans
+&trans  &trans   &trans          &trans          &trans           &trans      &trans  &trans    &trans          &trans           &trans           &trans   &trans
+&trans  &trans   &trans          &kp LEFT_SHIFT  &kp RCTRL        &trans      &trans  &trans    &kp RCTRL       &kp RIGHT_SHIFT  &trans           &trans
             >;
         };
     };
