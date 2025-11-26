@@ -47,7 +47,7 @@
     LT_Tap_Preferred: on_LT {
         compatible = "zmk,behavior-hold-tap";
         label = "LT_Tap_Preferred";
-        bindings = <&lt>, <&kp>;
+        bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
         tapping-term-ms = <70>;
