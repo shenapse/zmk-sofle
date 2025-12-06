@@ -81,7 +81,7 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '''', s: '"'}
   - '!'
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -95,9 +95,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: <, h: '>'}
   - {t: '[', h: ']', s: '{'}
+  - {t: '{', h: '}'}
   - {t: (, h: )}
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - ':'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '%'
   - {t: '=', s: +}
