@@ -39,8 +39,8 @@
 
         #binding-cells = <2>;
         tapping-term-ms = <70>;
-        flavor = "tap-preferred";
-        hold-trigger-key-positions = <43 42 41 47 49 48>;
+        flavor = "tap-unless-interrupted";
+        hold-trigger-key-positions = <43 41 47 49 48 42 40 50 54 55 56 57 59 60 61 62>;
         retro-tap;
     };
 
@@ -52,8 +52,8 @@
         #binding-cells = <2>;
         tapping-term-ms = <70>;
         retro-tap;
-        flavor = "tap-preferred";
-        hold-trigger-key-positions = <40 50 37 38 51 26 39 57 59 27>;
+        flavor = "tap-unless-interrupted";
+        hold-trigger-key-positions = <40 50 37 38 51 26 39 57 59 27 56 55 60 61>;
     };
 
     behaviors {
@@ -64,11 +64,11 @@
 
         layer0 {
             bindings = <
-&kp ESC           &kp N1                   &kp N2                   &kp N3                 &kp N4                      &kp N5                       &kp UP_ARROW     &kp N6                   &kp N7                &kp N8                          &kp N9                         &kp N0                      &kp DELETE
-&kp TAB           &kp Q                    &kp W                    &kp E                  &kp R                       &kp T                        &kp DOWN_ARROW   &kp Y                    &kp U                 &kp I                           &kp O                          &kp P                       &kp BSLH
-&kp LEFT_CONTROL  &kp A                    &kp S                    &kp D                  &kp F                       &kp G                        &kp LEFT_ARROW   &kp H                    &kp J                 &kp K                           &kp L                          &kp COMMA                   &kp GRAVE
-&kp LSHFT         &MT_modifier LEFT_ALT Z  &MT_modifier LEFT_ALT X  &MT_modifier LSHIFT C  &MT_modifier LCTRL V        &kp B                        &kp RIGHT_ARROW  &kp N                    &MT_modifier RCTRL M  &MT_modifier RIGHT_SHIFT COMMA  &MT_modifier RIGHT_ALT PERIOD  &LT_Tap_Preferred 3 PERIOD  &trans
-&kp C_MUTE        &kp SPACE                &kp DEL                  &kp SPACE              &LT_Tap_Preferred 3 PERIOD  &LT_Tap_Preferred 1 COMMA    &kp DELETE       &LT_Tap_Preferred 2 TAB  &kp ENTER             &kp BACKSPACE                   &kp RIGHT_GUI                  &kp RIGHT_CONTROL
+&kp ESC         &kp N1                   &kp N2                     &kp N3     &kp N4                     &kp N5                        &kp UP_ARROW     &kp N6                   &kp N7                     &kp N8         &kp N9                          &kp N0                &kp DELETE
+&kp GRAVE       &kp Q                    &kp W                      &kp E      &kp R                      &kp T                         &kp DOWN_ARROW   &kp Y                    &kp U                      &kp I          &kp O                           &kp P                 &kp BSLH
+&kp LEFT_SHIFT  &MT_modifier LCTRL A     &kp S                      &kp D      &kp F                      &kp G                         &kp LEFT_ARROW   &kp H                    &kp J                      &kp K          &kp L                           &MT_modifier RCTRL P  &kp RIGHT_SHIFT
+&trans          &MT_modifier LEFT_ALT Z  &MT_modifier LEFT_SHIFT X  &kp C      &MT_modifier LCTRL V       &kp B                         &kp RIGHT_ARROW  &kp N                    &MT_modifier RCTRL M       &kp COMMA      &MT_modifier LEFT_SHIFT PERIOD  &kp RIGHT_ALT         &trans
+&kp C_MUTE      &trans                   &kp DEL                    &kp ENTER  &LT_Tap_Preferred 1 COMMA  &LT_Tap_Preferred 3 PERIOD    &kp DELETE       &LT_Tap_Preferred 2 TAB  &LT_Tap_Preferred 1 SPACE  &kp BACKSPACE  &kp RIGHT_GUI                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
@@ -78,15 +78,15 @@
 
         layer_1 {
             bindings = <
-&kp F11     &kp F1         &kp F2            &kp F3                &kp F4                 &kp F5              &mmv MOVE_UP     &kp F6       &kp F7           &kp F8      &kp F9       &kp F10           &kp F12
-&trans      &trans         &trans            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp SLASH    &kp ASTERISK     &kp CARET   &kp GRAVE    &trans            &trans
-&trans      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON       &mmv MOVE_LEFT   &kp PERCENT  &kp EQUAL        &kp PLUS    &kp MINUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &kp EXCL       &kp QUESTION      &kp AMPERSAND         &kp PIPE               &trans              &mmv MOVE_RIGHT  &kp HASH     &kp AT           &kp DOLLAR  &kp INT_YEN  &kp BACKSLASH     &trans
+&kp F11     &kp F1         &kp F2            &kp F3                &kp F4                 &kp F5              &mmv MOVE_UP     &kp F6       &kp F7           &kp F8      &kp F9       &kp F10        &kp F12
+&trans      &trans         &trans            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp SLASH    &kp ASTERISK     &kp CARET   &kp GRAVE    &trans         &trans
+&trans      &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON       &mmv MOVE_LEFT   &kp PERCENT  &kp EQUAL        &kp PLUS    &kp MINUS    &kp UNDER      &trans
+&trans      &kp EXCL       &kp QUESTION      &kp AMPERSAND         &kp PIPE               &trans              &mmv MOVE_RIGHT  &kp HASH     &kp AT           &kp DOLLAR  &kp INT_YEN  &kp BACKSLASH  &trans
 &kp C_MUTE  &trans         &trans            &trans                &trans                 &trans              &mkp LCLK        &trans       &kp RIGHT_SHIFT  &trans      &trans       &trans
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         layer_2 {
